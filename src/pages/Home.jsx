@@ -11,19 +11,19 @@ const Home = () => {
       id: 1,
       name: "François Forme",
       image: "./francoisf.png",
-      description: "During my two years studying for my technical university diploma, François was the person who supported me the most throughout my studies and who always encouraged me to pursue the projects I wanted to do. With his knowledge in a wide range of fields, he is a role model for me."
+      description: "During my two years studying for my technical university diploma, François was the person who supported me the most throughout my studies and who always encouraged me to pursue the projects I wanted to do. With his knowledge in a wide range of fields, he is a role model for me. For himhe highlight the importance of always striving to be in a constant state of learning."
     },
     {
       id: 2,
       name: "Patrice Michel",
       image: "./Patrice-Michel.png",
-      description: "Patrice Michel was one of my teachers during my preparatory year in engineering science. He is also a researcher at the Tésa laboratory. He is a very inspiring person who is very good at mathematics and has an extraordinary ability to think."
+      description: "Patrice Michel was one of my teachers during my preparatory year in engineering science. He is also a researcher at the Tésa laboratory. He is a very inspiring person who is very good at mathematics and has an extraordinary ability to think. He taught me to always trying to be the best, pushing to always seek new things."
     },
     {
       id: 3,
-      name: "Grace Hopper",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800",
-      description: "Computer science pioneer and United States Navy rear admiral who developed the first compiler and popularized the idea of machine-independent programming languages. Her innovative thinking and determination to make programming more accessible continue to inspire generations of developers."
+      name: "Owen Simonin (Hasheur)",
+      image: "./hasheur.png",
+      description: "Owen Simonin, known as Hasheur on YouTube, is a French influencer specializing in blockchain and cryptocurrencies. He is also the founder of Meria, an investment company in blockchain. I talked with him 1 time (not in the context of an interview) but for him the best way to succeed is to forge ahead headfirst and not stop after a failure, and to not listen others on your plans."
     }
   ];
 
@@ -120,15 +120,15 @@ const Home = () => {
           <h2>More About Me</h2>
 
           <div className="video-container">
-            <iframe
+            <video
               width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+              height="600"
+              controls
+              preload="metadata"
+            >
+              <source src="/elevator_spitch.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
           </div>
         </Card>
       </div>

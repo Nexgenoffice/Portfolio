@@ -5,6 +5,7 @@ import Lenis from 'lenis';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FloatingObjects from './components/FloatingObjects';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import EngineeringCourse from './pages/EngineeringCourse';
 import CivicEngagement from './pages/CivicEngagement';
@@ -43,6 +44,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
         <FloatingObjects />
         <Header />
         <Routes>

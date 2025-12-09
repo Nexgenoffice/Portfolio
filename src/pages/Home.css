@@ -72,7 +72,8 @@
   border: 1px solid var(--border-color);
 }
 
-.video-container iframe {
+.video-container iframe,
+.video-container video {
   display: block;
 }
 
@@ -327,8 +328,9 @@
     text-align: center;
   }
   
-  .video-container iframe {
-    height: 250px;
+  .video-container iframe,
+  .video-container video {
+    height: 400px;
   }
   
   .who-am-i-section {
