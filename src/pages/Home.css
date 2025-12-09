@@ -1,0 +1,377 @@
+.title-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: 200;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: white;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+.video-container {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.video-container iframe {
+  display: block;
+}
+
+.who-am-i-section {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.images-cascade {
+  position: relative;
+  width: 45%;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.cascade-image {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px var(--shadow-color);
+  border: 3px solid var(--bg-primary);
+  transition: all 0.4s ease;
+}
+
+.cascade-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cascade-image:hover {
+  transform: scale(1.05) translateY(-10px);
+  z-index: 10;
+  box-shadow: 0 20px 60px var(--shadow-color);
+}
+
+.img-1 {
+  width: 280px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.img-2 {
+  width: 280px;
+  height: 200px;
+  top: 100px;
+  left: 150px;
+  z-index: 3;
+}
+
+.img-3 {
+  width: 280px;
+  height: 200px;
+  top: 200px;
+  left: 300px;
+  z-index: 1;
+}
+
+.who-am-i-content {
+  flex: 1;
+}
+
+.who-am-i-content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.who-am-i-content p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.inspirations-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inspiration-item {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  transition: all 0.3s ease;
+}
+
+.inspiration-header {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.inspiration-header:hover {
+  background: var(--bg-primary);
+}
+
+.inspiration-header.active {
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.inspiration-header .arrow {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.inspiration-content {
+  padding: 2.5rem 2rem;
+  animation: expandContent 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top;
+}
+
+@keyframes expandContent {
+  from {
+    opacity: 0;
+    transform: scaleY(0.8) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+.inspiration-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+  animation: fadeInTitle 0.6s ease 0.1s backwards;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inspiration-body {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.inspiration-image {
+  flex-shrink: 0;
+  width: 350px;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid var(--border-color);
+  box-shadow: 0 10px 40px var(--shadow-color);
+  animation: zoomIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s backwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.inspiration-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.inspiration-image:hover img {
+  transform: scale(1.1);
+}
+
+.inspiration-text {
+  flex: 1;
+  animation: slideInRight 0.6s ease 0.3s backwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.inspiration-text p {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .video-container iframe {
+    height: 250px;
+  }
+  
+  .who-am-i-section {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  
+  .images-cascade {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .img-1 {
+    width: 200px;
+    height: 150px;
+    left: 10px;
+  }
+  
+  .img-2 {
+    width: 200px;
+    height: 150px;
+    top: 60px;
+    left: 70px;
+  }
+  
+  .img-3 {
+    width: 200px;
+    height: 150px;
+    top: 120px;
+    left: 130px;
+  }
+  
+  .inspiration-title {
+    font-size: 1.8rem;
+  }
+  
+  .inspiration-body {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .inspiration-image {
+    width: 100%;
+    height: 300px;
+  }
+}
