@@ -1,9 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext';
 import './Header.css';
 
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
   const navItems = [
@@ -31,10 +29,6 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-
-        <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-          {theme === 'light' ? '🌙' : '☀️'}
-        </button>
       </div>
     </header>
   );

@@ -105,7 +105,7 @@ const InternationalMobility = () => {
             <div className="travel-card">
               <h3>London</h3>
               <p className="travel-description">
-                Personal travel alone for new year eve.
+                Travel for new year eve.
               </p>
               <div className="travel-image-carousel">
                 <button 
@@ -129,7 +129,7 @@ const InternationalMobility = () => {
             <div className="travel-card">
               <h3>Munich</h3>
               <p className="travel-description">
-                Personal travel alone during summer holidays.
+                Travel during summer holidays.
               </p>
               <div className="travel-image-carousel">
                 <button 
