@@ -120,9 +120,7 @@ const CareerProjects = () => {
                 <span>Ecology</span>
               </div>
               <div className="project-links">
-                <a href="https://twitter.com/nadroots" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                  𝕏 Twitter
-                </a>
+
               </div>
             </div>
             <div className="project-image">
