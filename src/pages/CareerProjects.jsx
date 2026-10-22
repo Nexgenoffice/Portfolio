@@ -26,13 +26,16 @@ const CareerProjects = () => {
             <div className="experience-content">
               <div className="experience-header">
                 <h3>AMS verification Apprentice</h3>
-                <span className="period">2025 - Curent</span>
+                <span className="period">2025 - Current</span>
               </div>
               <p className="company">NXP Semiconductors</p>
               <p>
-                I'm currently making my work-study program at NXP Semiconductors in Toulouse.
-                Working as an AMS verification apprentice, I am developing some programsto test and verify analog and mixed-signal components in integrated circuits. 
-                I'm also developing website aiming to facilitate the learning of new employees in AMS verification.
+              As an AMS Verification Apprentice at NXP Semiconductors, I contribute 
+              to the testing and verification of analog and mixed-signal components. 
+              I also work on a web-based learning resource for new team members. 
+              This experience is helping me strengthen my programming, testing and 
+              problem-solving skills. Alongside my apprenticeship, I am developing a 
+              strong interest in financial markets and data-driven analysis.
               </p>
               <div className="tech-tags">
                 <span>React</span>
@@ -87,10 +90,9 @@ const CareerProjects = () => {
                 leading to the same sound being heard at different volumes depending on where you were in the room.
               </p>
               <div className="tech-tags">
-                <span>Java</span>
-                <span>Docker</span>
-                <span>Kubernetes</span>
-                <span>Redis</span>
+                <span>Python</span>
+                <span>Acoustics</span>
+                <span>Signal Processing</span>
               </div>
             </div>
             <div className="project-image">
@@ -132,7 +134,7 @@ const CareerProjects = () => {
             <div className="project-content">
               <h3>Rocky's Head</h3>
               <p>
-                RRocky's Head (Rockyswap) is a project that will be deployed on the testnet on Seismic's L1 blockchain. 
+                Rocky's Head (Rockyswap) is a project that will be deployed on the testnet on Seismic's L1 blockchain. 
                 The goal is to create a secure swap platform with zero fees. 
                 As founder and artist, my primary goal is to raise awareness of our team and build a community. 
                 Our first community product: The Rocky's Head pfp generator (very addictive). 
@@ -146,7 +148,6 @@ const CareerProjects = () => {
                 <span>JSON</span>
                 <span>Design</span>
                 <span>Management</span>
-                <span>Ecology</span>
               </div>
               <div className="project-links">
                 <a href="https://rocky-generator.vercel.app" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">

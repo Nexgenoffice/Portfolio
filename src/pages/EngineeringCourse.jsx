@@ -17,10 +17,12 @@ const EngineeringCourse = () => {
             <h3>INP-ENSEEIHT</h3>
             <p className="period">2025 - Present</p>
             <p>
-              I am currently studying in the EEEA program at ENSEEIHT. This acronym stands for Electronic, Electrical Energy, and Automation, a program focused on electronics and electrical engineering and their different applications.
-              I am  more interested about the electronics part of the program but In the future, I would like to specialize in mathematical models. My final goal is to work into prediction algorithms.
-              This page was made to show my academic progress and all the projects I am able to do in my program.
-​              This this page will be updated during all my academic progress.
+            I am currently pursuing an engineering degree in the EEEA program at INP-ENSEEIHT, 
+            which covers electronics, electrical engineering and automation. This technical background 
+            is helping me develop a structured approach to problem-solving and verification. My main 
+            interests lie in financial markets, data analysis and quantitative methods. I am 
+            particularly interested in how mathematical and computational tools can be used to study 
+            market behaviour. This page presents selected coursework and projects from my degree.
             </p>
             <div className="academic-images">
               <div className="academic-image">

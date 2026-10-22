@@ -11,7 +11,7 @@ const Home = () => {
       id: 1,
       name: "François Forme",
       image: "./francoisf.png",
-      description: "During my two years studying for my technical university diploma, François was the person who supported me the most throughout my studies and who always encouraged me to pursue the projects I wanted to do. With his knowledge in a wide range of fields, he is a role model for me. For himhe highlight the importance of always striving to be in a constant state of learning."
+      description: "During my two years studying for my technical university diploma, François was the person who supported me the most throughout my studies and who always encouraged me to pursue the projects I wanted to do. With his knowledge in a wide range of fields, he is a role model for me. For him he highlight the importance of always striving to be in a constant state of learning."
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const Home = () => {
     <div className="page">
       <PageHero 
         title="ADRIEN DARRIET" 
-        subtitle="Engineering Student & Designer"
+        subtitle="Engineering student | Short-term Volatility Trader"
         buttons={
           <>
             <a href="/CVEN.pdf" className="btn btn-primary" download>Download CV</a>
@@ -50,7 +50,7 @@ const Home = () => {
         <section className="who-am-i-section">
           <div className="images-cascade">
             <div className="cascade-image img-1">
-              <img src="./blockchain.png" alt="Workspace" />
+              <img src="./trading.png" alt="Workspace" />
             </div>
             <div className="cascade-image img-2">
               <img src="./pfp.png" alt="Coding" />
@@ -72,9 +72,9 @@ const Home = () => {
             </p>
             <br />
             <p>
-              Always preocuped by new technologies and their applications, I am passionate about electronics,
-              mathematices, computer science and blockchain. Those elements combined made my way through this 
-              school in the Electronic, Electrical Energy, and Automation program.
+              Always preocuped by numbers and their applications, I am passionate 
+              about mathematics, computer science, finance and blockchain. In addition to be a student, 
+              I'm also a Short-term Volatility Trader. 
             </p>
           </div>
         </section>
