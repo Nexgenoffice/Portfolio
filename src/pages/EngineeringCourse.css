@@ -71,6 +71,18 @@
   transition: all 0.4s ease;
 }
 
+.trion-description {
+  margin: 3rem auto 2rem;
+}
+
+.practical-image-large.trion-image {
+  height: 650px;
+}
+
+.practical-image-large.trion-image img {
+  object-fit: contain;
+}
+
 .practical-image-large:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 45px var(--shadow-color);
@@ -122,6 +134,10 @@
   
   .practical-image-large {
     height: 300px;
+  }
+
+  .practical-image-large.trion-image {
+    height: 500px;
   }
   
   .practical-image {

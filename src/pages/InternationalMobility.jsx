@@ -7,6 +7,7 @@ const InternationalMobility = () => {
   const [londonIndex, setLondonIndex] = useState(0);
   const [munichIndex, setMunichIndex] = useState(0);
   const [cambrilsIndex, setCambrilsIndex] = useState(0);
+  const [faroIndex, setFaroIndex] = useState(0);
 
   const londonImages = [
     './london3.png',
@@ -24,6 +25,13 @@ const InternationalMobility = () => {
     './cambrils1.png',
     './cambrils2.png',
     './cambrils3.png'
+  ];
+
+  const faroImages = [
+    './portugal1.png',
+    './portugal2.png',
+    './portugal3.png',
+    './portugal4.png'
   ];
 
   const nextImage = (setter, current, length) => {
@@ -45,51 +53,24 @@ const InternationalMobility = () => {
         <Card>
           <h2 style={{ textAlign: 'center' }}>Mobility at ENSEEIHT</h2>
           <p style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto 1rem' }}>
-            During these three years at ENSEEIHT we have to make 12 weeks abroad.
+            My international mobility is now confirmed: next summer, I will join NXP Semiconductors in Eindhoven, the Netherlands, for an internship in Digital Verification.
           </p>
           <br />
           <p style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto 1rem' }}>
-            I am currently thinking about how I am going to spend this period abroad. 
-            I have three choices available to me.
+            This internship will give me the opportunity to explore digital verification in an international engineering environment. I will deepen my understanding of how digital designs are checked against their specifications, from defining relevant test scenarios to analyzing simulation results and investigating unexpected behavior.
           </p>
           <br />
+          <p style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto 1rem' }}>
+            Building on my current experience in verification at NXP, this new setting and technical focus will help me broaden my skills, take on new challenges and learn from engineers working on digital systems. I am also looking forward to discovering Eindhoven and experiencing life in the Netherlands.
+          </p>
           
           <div className="mobility-grid">
-            <div className="mobility-card">
-              <h3>Internship Abroad in my Company</h3>
+            <div className="mobility-card nxp-card">
+              <img className="nxp-card-background" src="./nxp.png" alt="" aria-hidden="true" />
+              <h3>Digital Verification Internship — NXP Eindhoven</h3>
               <p className="mobility-description">
-                The first option would be to spend some time abroad at my company, NXP. 
-                The destinations on offer are Milan, Chandler, and Seoul. 
-                I'm drawn to Seoul because I've never been to Asia and would like to discover new cultures.
+                Summer 2027 · Eindhoven, the Netherlands
               </p>
-              <div className="mobility-image">
-                <img src="./nxp.png" alt="Exchange Program" />
-              </div>
-            </div>
-
-            <div className="mobility-card">
-              <h3>Internship Abroad in another Company</h3>
-              <p className="mobility-description">
-                I also have the option of doing my internship abroad in another company. 
-                If I had to choose now, I think I would choose a company in the hardware field to discover new things.
-                Also, I would like to go to Switzerland.
-              </p>
-              <div className="mobility-image">
-                <img src="./suisse.png" alt="Workshops" />
-              </div>
-            </div>
-
-            <div className="mobility-card">
-              <h3>Semester Abroad</h3>
-              <p className="mobility-description">
-                We have the opportunity to spend a semester abroad in tirhd year. 
-                I would like to do this in the field of mathematical models and statistics related to economics.
-                My favorite destinations would be London school of economics or ETH Zurich.  
-                I am aware that this differs from electronics, which is my core subject, but it would enable me to move closer to my goal.
-              </p>
-              <div className="mobility-image">
-                <img src="./lse.png" alt="Research" />
-              </div>
             </div>
           </div>
         </Card>
@@ -103,7 +84,7 @@ const InternationalMobility = () => {
           
           <div className="travel-grid">
             <div className="travel-card">
-              <h3>London</h3>
+              <h3>London, England</h3>
               <p className="travel-description">
                 Travel for new year eve.
               </p>
@@ -127,7 +108,7 @@ const InternationalMobility = () => {
             </div>
 
             <div className="travel-card">
-              <h3>Munich</h3>
+              <h3>Munich, Germany</h3>
               <p className="travel-description">
                 Travel during summer holidays.
               </p>
@@ -151,7 +132,7 @@ const InternationalMobility = () => {
             </div>
 
             <div className="travel-card">
-              <h3>Cambrils</h3>
+              <h3>Cambrils, Spain</h3>
               <p className="travel-description">
                 Travel every year during summer holidays with my partner.
               </p>
@@ -168,6 +149,30 @@ const InternationalMobility = () => {
                 <button 
                   className="carousel-btn next" 
                   onClick={() => nextImage(setCambrilsIndex, cambrilsIndex, cambrilsImages.length)}
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+
+            <div className="travel-card travel-card-faro">
+              <h3>Faro</h3>
+              <p className="travel-description">
+                A trip to Faro in portugal with my school friends.
+              </p>
+              <div className="travel-image-carousel">
+                <button
+                  className="carousel-btn prev"
+                  onClick={() => prevImage(setFaroIndex, faroIndex, faroImages.length)}
+                >
+                  ‹
+                </button>
+                <div className="travel-image">
+                  <img src={faroImages[faroIndex]} alt="Faro, Portugal" />
+                </div>
+                <button
+                  className="carousel-btn next"
+                  onClick={() => nextImage(setFaroIndex, faroIndex, faroImages.length)}
                 >
                   ›
                 </button>

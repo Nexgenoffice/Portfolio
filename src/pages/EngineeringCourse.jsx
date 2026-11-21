@@ -39,13 +39,22 @@ const EngineeringCourse = () => {
           <h2 style={{ textAlign: 'center' }}>Practical Progress</h2>
           <div className="practical-section">
             <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
-              Since the beginning of the year at ENSEIHT, we have had the opportunity to carry out a series of practical work on “basic electronic functions,” in which we built a device for measuring real and complex impedance using operational amplifiers, multipliers, and filters.
+              In my first year at ENSEIHT, we had the opportunity to carry out a series of practical work on “basic electronic functions,” in which we built a device for measuring real and complex impedance using operational amplifiers, multipliers, and filters.
               The project ended with a report and presentation of our product to our teachers.
             </p>
             
             <div className="practical-images">
               <div className="practical-image-large">
                 <img src="./electp.png" alt="Practical Work" />
+              </div>
+            </div>
+            <p className="trion-description" style={{ textAlign: 'center', maxWidth: '800px' }}>
+              In my second year at ENSEIHT, we had the opportunity to express more of our creativity and I create a project called "TRION", a trash connected to blockchain who can be used to reward people who recycle. The project ended with a report and presentation of our product to our teachers.
+            </p>
+
+            <div className="practical-images">
+              <div className="practical-image-large trion-image">
+                <img src="./trion.png" alt="Practical Work" />
               </div>
             </div>
           </div>

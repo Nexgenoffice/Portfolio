@@ -96,9 +96,40 @@ const Interests = () => {
               </div>
             </div>
             
-            <div className="blockchain-image">
+            <div className="interest-feature-image">
               <img src="./btcf.png" alt="Blockchain Technology" />
             </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h2 style={{ textAlign: 'center' }}>Trading Indexes</h2>
+          <p style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 2rem' }}>
+            I trade major US stock indexes, with a focus on the Nasdaq and the S&amp;P 500. Following these markets gives me a way to study how company performance, economic news and investor sentiment influence price movements.
+          </p>
+
+          <div className="interest-grid">
+            <div className="interest-card">
+              <h4>Nasdaq</h4>
+              <p>
+                I follow the Nasdaq, especially the Nasdaq-100, which brings together many of the largest non-financial companies listed on the Nasdaq exchange. Its strong exposure to technology and growth-oriented businesses makes it interesting to observe how innovation, earnings and changing expectations affect the market.
+              </p>
+            </div>
+
+            <div className="interest-card">
+              <h4>S&amp;P 500</h4>
+              <p>
+                The S&amp;P 500 tracks around 500 leading publicly traded US companies across a broad range of industries. I trade it to follow the wider US equity market and compare its movements with the more technology-focused Nasdaq.
+              </p>
+            </div>
+          </div>
+
+          <p style={{ textAlign: 'center', maxWidth: '800px', margin: '2rem auto 0' }}>
+            Index trading also connects with my interest in data analysis: I pay attention to market structure, volatility and the events that can move prices, while keeping risk management in mind.
+          </p>
+
+          <div className="interest-feature-image us-index-image">
+            <img src="./usindex.png" alt="US stock indexes" />
           </div>
         </Card>
       </div>

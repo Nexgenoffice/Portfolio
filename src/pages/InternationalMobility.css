@@ -1,6 +1,7 @@
 .mobility-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(0, 900px);
+  justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -13,6 +14,28 @@
   border: 1px solid var(--border-color);
   padding: 2rem;
   transition: all 0.4s ease;
+}
+
+.nxp-card {
+  position: relative;
+  justify-content: center;
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.nxp-card-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.nxp-card h3,
+.nxp-card .mobility-description {
+  position: relative;
 }
 
 .mobility-card:hover {
@@ -57,12 +80,6 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 992px) {
-  .mobility-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .mobility-grid {
     grid-template-columns: 1fr;
@@ -92,6 +109,10 @@
   border: 1px solid var(--border-color);
   padding: 2rem;
   transition: all 0.4s ease;
+}
+
+.travel-card-faro {
+  grid-column: 2;
 }
 
 .travel-card:hover {
@@ -174,6 +195,12 @@
   .travel-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .travel-card-faro {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 450px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -183,6 +210,11 @@
   
   .travel-card {
     padding: 1.5rem;
+  }
+
+  .travel-card-faro {
+    grid-column: auto;
+    width: auto;
   }
   
   .travel-image {

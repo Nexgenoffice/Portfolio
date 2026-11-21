@@ -116,21 +116,7 @@ const Home = () => {
           </div>
         </Card>
 
-        <Card>
-          <h2>More About Me</h2>
-
-          <div className="video-container">
-            <video
-              width="100%"
-              height="600"
-              controls
-              preload="metadata"
-            >
-              <source src="/elevator_spitch.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la lecture de vidéos.
-            </video>
-          </div>
-        </Card>
+        
       </div>
     </div>
   );
