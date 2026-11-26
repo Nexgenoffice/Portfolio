@@ -10,6 +10,7 @@ const Header = () => {
     { path: '/civic', label: 'Civic Engagement' },
     { path: '/mobility', label: 'International Mobility' },
     { path: '/career', label: 'Career & Projects' },
+    { path: '/cep', label: 'Career Evolution Plan' },
     { path: '/interests', label: 'Interests' }
   ];
 

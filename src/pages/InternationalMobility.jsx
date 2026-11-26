@@ -71,6 +71,14 @@ const InternationalMobility = () => {
               <p className="mobility-description">
                 Summer 2027 · Eindhoven, the Netherlands
               </p>
+              <div className="mobility-document-links">
+                <a className="btn btn-primary" href="/CVEN.pdf" download>
+                  Download CV · English
+                </a>
+                <a className="btn btn-primary" href="/CoverLetterEN.pdf" download>
+                  Download cover letter · English
+                </a>
+              </div>
             </div>
           </div>
         </Card>

@@ -11,6 +11,7 @@ import EngineeringCourse from './pages/EngineeringCourse';
 import CivicEngagement from './pages/CivicEngagement';
 import InternationalMobility from './pages/InternationalMobility';
 import CareerProjects from './pages/CareerProjects';
+import CareerEvolutionPlan from './pages/CareerEvolutionPlan';
 import Interests from './pages/Interests';
 import './App.css';
 import 'lenis/dist/lenis.css';
@@ -53,6 +54,7 @@ function App() {
           <Route path="/civic" element={<CivicEngagement />} />
           <Route path="/mobility" element={<InternationalMobility />} />
           <Route path="/career" element={<CareerProjects />} />
+          <Route path="/cep" element={<CareerEvolutionPlan />} />
           <Route path="/interests" element={<Interests />} />
         </Routes>
         <Footer />

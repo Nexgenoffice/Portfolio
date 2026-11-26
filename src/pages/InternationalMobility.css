@@ -38,6 +38,20 @@
   position: relative;
 }
 
+.mobility-document-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.mobility-document-links .btn {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
 .mobility-card:hover {
   border-color: var(--accent-color);
   transform: translateY(-5px);

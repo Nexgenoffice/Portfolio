@@ -1,0 +1,38 @@
+.cep-presentation-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cep-presentation-heading h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cep-slide {
+  margin: 0;
+  text-align: center;
+}
+
+.cep-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.cep-slide figcaption {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .cep-presentation-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
